@@ -1,0 +1,40 @@
+body{
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.image{
+    max-width: 300px;
+}
+.todomain{
+    allign-items: center;  
+}
+.todosection-title{
+    font-size: 48px;
+    line-height: 1.6;
+    background-color: rgb(87, 7, 87);
+    color: white;
+}
+.todosection{
+    font-size: 34px;
+    line-height: 1.4;
+    background-color: rgb(155, 32, 32);
+}
+h3{
+    font-size: 24px;
+    line-height: 1.2;
+
+}
+.todosection-todo{
+    font-size: 20px;
+    margin-left: 32px;
+    background-color: black;
+    color: white;
+}
+section{
+    margin-bottom: 32px;
+    margin-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left:16px;
+}

@@ -1,0 +1,92 @@
+body{
+    max-width: 400px;
+    font-family: Open_sans,sans-serif;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.TodoPage-Title{
+    font-size: 20px;
+    line-height:1.6;    
+    font-weight:600;
+    margin-bottom: 12px;
+}
+.AddTodo{
+    display: flex;
+    height: 32px;
+    width: 500px;
+    align-items: strech;
+    margin-bottom: 24px;
+}
+.AddTodo-Text{
+    padding: 6px,12px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;  
+}
+.AddTodo-Date{
+    padding: 6px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+.AddTodo-Button{
+    font-size: 14px;
+    color: white;
+    background-color: green;
+    bored: 1px solid  gray;
+    border-radius: 4px;
+    padding: 6px,22px;
+    width: 70px;
+}
+.TodoSection{
+    margin-bottom: 20px;
+}
+.TodoSection-Title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: black;
+}
+.TodoSectionTitle-Text{
+    font-size: 14px;
+    font-weight: 600px;
+    margin-right: 8px;
+    line-height: 1.4;
+}
+.TodoItem{
+    font-size: 14px;
+    color:black;
+}
+.TodoItem-Container{
+    display: flex;
+    font-size: 14px;
+}
+.TodoItem-Checkbox{
+    width: 16px;
+    height: 16px;
+
+}
+.todos-list{
+    margin-left: 10px;
+    align-items: centre;
+    font-size: 12px;
+    color: rgb(97, 75, 75);
+}
+.Todo-Strike{
+    text-decoration: line-through;
+}
+.TodoItem-Delete{
+    visibility: hidden;
+    margin-left: 8px;
+}
+.TodoItem-Delete >img {
+    width: 16px;
+}
+.TodoItem-Container:hover .TodoItem-Delete{
+    visibility:visible;
+}
+.TodoItem-Container:hover{
+    background-color: white;
+}

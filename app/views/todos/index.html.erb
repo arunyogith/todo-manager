@@ -1,0 +1,25 @@
+<main class="TodoPageMain">
+    <article>
+        <h1 class="TodoPage-Title">My Todo-List        </h1>
+        <%= form_with(url: "/todos", method: "post", class: "AddTodo") do %>
+            <%= text_field_tag("todo_text", nil, class: "AddTodo-text", placeholder: "what's next?") %>
+            <%= date_field_tag("due_date", nil, class: "AddTodo-date") %>
+            <%= submit_tag("Add", class: "AddTodo-Button") %>
+        <% end %>
+        <%= render partial: "todo-section", locals: {
+            section_title: "overdue",
+            todos: @todos.overdue,
+            show_due_date: true
+        } %>
+        <%= render partial: "todo-section", locals: {
+            section_title: "due today",
+            todos: @todos.due_today,
+            show_due_date: false
+        } %>
+        <%= render partial: "todo-section", locals: {
+            section_title: "due later",
+            todos: @todos.due_later,
+            show_due_date: true
+            } %>
+    </article> 
+</main>
